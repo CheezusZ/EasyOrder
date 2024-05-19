@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model; 
+
+class OrderItemModel extends Model
+{
+    protected $table = 'Orderitem'; 
+    protected $primaryKey = 'order_item_id';
+    protected $allowedFields = ['order_id', 'menu_item_name', 'quantity'];
+    protected $returnType = 'array'; 
+}
