@@ -53,6 +53,7 @@ CREATE TABLE Menuitem (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
+
 CREATE TABLE Orders (
     order_id INT(11) UNSIGNED AUTO_INCREMENT,
     user_id INT(11) UNSIGNED,
@@ -70,6 +71,7 @@ CREATE TABLE Orders (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
+
 CREATE TABLE Orderitem (
     order_item_id INT(11) UNSIGNED AUTO_INCREMENT,
     order_id INT(11) UNSIGNED,
